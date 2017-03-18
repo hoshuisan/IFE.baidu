@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+  <script src="https://unpkg.com/vue"></script>
+  <div id="app">
+    <span>{{count}}</span>
+    <button @click = "inc">+</button>
+  </div>
+  <script>
+    var app = new Vue({
+      data () {
+      return {count: 0}
+    },
+    methods : {
+      inc () {this.count++}
+    }
+    })
+    app.$mount ('#app')
+  </script>
+</body>
+</html>
